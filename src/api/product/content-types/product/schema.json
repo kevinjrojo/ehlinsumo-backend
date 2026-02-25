@@ -34,6 +34,10 @@
     "category": {
       "type": "string",
       "required": true
+    },
+    "subCategory": {
+      "type": "string",
+      "required": true
     }
   }
 }
