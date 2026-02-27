@@ -441,7 +441,9 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    category: Schema.Attribute.String & Schema.Attribute.Required;
+    category: Schema.Attribute.Enumeration<
+      ['Ferreter\u00EDa/Herramientas', 'Repuestos/Accesorios', 'Hogar/Electro']
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -456,7 +458,19 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String & Schema.Attribute.Required;
     price: Schema.Attribute.Integer & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
-    subCategory: Schema.Attribute.String & Schema.Attribute.Required;
+    subCategory: Schema.Attribute.Enumeration<
+      [
+        'Heladeras',
+        'Mesas',
+        'Camas',
+        'Accesorios',
+        'L\u00E1mparas',
+        'Enchufes',
+        'Destornilladores',
+        'Taladros',
+        'Cintas m\u00E9tricas',
+      ]
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

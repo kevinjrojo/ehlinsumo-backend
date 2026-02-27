@@ -32,12 +32,26 @@
       ]
     },
     "category": {
-      "type": "string",
-      "required": true
+      "type": "enumeration",
+      "enum": [
+        "Ferretería/Herramientas",
+        "Repuestos/Accesorios",
+        "Hogar/Electro"
+      ]
     },
     "subCategory": {
-      "type": "string",
-      "required": true
+      "type": "enumeration",
+      "enum": [
+        "Heladeras",
+        "Mesas",
+        "Camas",
+        "Accesorios",
+        "Lámparas",
+        "Enchufes",
+        "Destornilladores",
+        "Taladros",
+        "Cintas métricas"
+      ]
     }
   }
 }
