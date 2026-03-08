@@ -442,7 +442,12 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   };
   attributes: {
     category: Schema.Attribute.Enumeration<
-      ['Ferreter\u00EDa/Herramientas', 'Repuestos/Accesorios', 'Hogar/Electro']
+      [
+        'Ferreter\u00EDa/Herramientas',
+        'Repuestos/Accesorios',
+        'Hogar/Electro',
+        'Sin categoria',
+      ]
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -461,14 +466,29 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     subCategory: Schema.Attribute.Enumeration<
       [
         'Heladeras',
-        'Mesas',
+        'Muebles',
         'Camas',
-        'Accesorios',
-        'L\u00E1mparas',
+        'Mesas',
+        'sillas',
+        'Armarios',
+        'Estanter\u00EDas',
+        'Minipimer',
+        'Batidoras',
+        'Licuadoras',
+        'Cafeteras',
+        'Tostadoras',
+        'Microondas',
+        'Escaleras',
+        'Pilas',
         'Enchufes',
+        'L\u00E1mparas',
+        'Accesorios',
         'Destornilladores',
         'Taladros',
+        'Llaves',
         'Cintas m\u00E9tricas',
+        'Martillos',
+        'Sierras',
       ]
     >;
     updatedAt: Schema.Attribute.DateTime;

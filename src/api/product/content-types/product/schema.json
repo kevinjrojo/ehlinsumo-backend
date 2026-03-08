@@ -35,14 +35,29 @@
       "type": "enumeration",
       "enum": [
         "Heladeras",
-        "Mesas",
+        "Muebles",
         "Camas",
-        "Accesorios",
-        "Lámparas",
+        "Mesas",
+        "sillas",
+        "Armarios",
+        "Estanterías",
+        "Minipimer",
+        "Batidoras",
+        "Licuadoras",
+        "Cafeteras",
+        "Tostadoras",
+        "Microondas",
+        "Escaleras",
+        "Pilas",
         "Enchufes",
+        "Lámparas",
+        "Accesorios",
         "Destornilladores",
         "Taladros",
-        "Cintas métricas"
+        "Llaves",
+        "Cintas métricas",
+        "Martillos",
+        "Sierras"
       ]
     },
     "category": {
@@ -50,7 +65,8 @@
       "enum": [
         "Ferretería/Herramientas",
         "Repuestos/Accesorios",
-        "Hogar/Electro"
+        "Hogar/Electro",
+        "Sin categoria"
       ]
     }
   }
