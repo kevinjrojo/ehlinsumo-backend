@@ -31,14 +31,6 @@
         "images"
       ]
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "Ferretería/Herramientas",
-        "Repuestos/Accesorios",
-        "Hogar/Electro"
-      ]
-    },
     "subCategory": {
       "type": "enumeration",
       "enum": [
@@ -51,6 +43,14 @@
         "Destornilladores",
         "Taladros",
         "Cintas métricas"
+      ]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Ferretería/Herramientas",
+        "Repuestos/Accesorios",
+        "Hogar/Electro"
       ]
     }
   }
