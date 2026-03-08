@@ -15,20 +15,17 @@
       "type": "string",
       "required": true
     },
-    "price": {
-      "type": "integer",
-      "required": true
-    },
     "description": {
       "type": "blocks",
       "required": true
     },
-    "image": {
-      "type": "media",
-      "multiple": true,
-      "required": true,
-      "allowedTypes": [
-        "images"
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Ferretería/Herramientas",
+        "Repuestos/Accesorios",
+        "Hogar/Electro",
+        "Sin categoria"
       ]
     },
     "subCategory": {
@@ -60,13 +57,16 @@
         "Sierras"
       ]
     },
-    "category": {
-      "type": "enumeration",
-      "enum": [
-        "Ferretería/Herramientas",
-        "Repuestos/Accesorios",
-        "Hogar/Electro",
-        "Sin categoria"
+    "price": {
+      "type": "integer",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
       ]
     }
   }
